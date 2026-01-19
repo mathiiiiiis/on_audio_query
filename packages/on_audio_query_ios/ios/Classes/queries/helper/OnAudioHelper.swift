@@ -25,6 +25,7 @@ public func loadSongItem(song: MPMediaItem) -> [String: Any?] {
         "duration": Int(song.playbackDuration * 1000),
         "title": song.title,
         "track": song.albumTrackNumber,
+        "disc_number": song.discNumber,
         "file_extension": fileExt
     ]
     return songData

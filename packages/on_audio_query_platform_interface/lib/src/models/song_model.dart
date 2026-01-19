@@ -68,6 +68,9 @@ class SongModel {
   /// Return song [track]
   int? get track => _info["track"];
 
+  /// Return song [discNumber]
+  int? get discNumber => _info["disc_number"];
+
   // /// Return song [uri]
   // String get uri;
 
