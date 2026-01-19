@@ -69,7 +69,16 @@ class SongModel {
   int? get track => _info["track"];
 
   /// Return song [discNumber]
-  int? get discNumber => _info["disc_number"];
+  int? get discNumber {
+    final value = _info["disc_number"];
+    if (value == null) return null;
+    if (value is int) return value;
+    if (value is String) {
+      // Android MediaStore returns disc_number as String, parse it
+      return int.tryParse(value);
+    }
+    return null;
+  }
 
   // /// Return song [uri]
   // String get uri;
