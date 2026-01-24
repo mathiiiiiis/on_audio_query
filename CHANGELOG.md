@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [2.9.4] - 2026-01-24
+## [2.9.5] - 2026-01-24
 
 ### Fixed
 - **DISC_NUMBER column crash**: Fixed SQLite crash on Android 9 (API 28) and earlier devices
